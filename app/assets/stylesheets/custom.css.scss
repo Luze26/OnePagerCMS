@@ -1,0 +1,15 @@
+@import "bootstrap";
+
+html {
+  overflow-y: scroll;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+@import "bootstrap-responsive";
