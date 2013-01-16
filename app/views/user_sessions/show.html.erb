@@ -1,0 +1,8 @@
+<h2>Your Session<</h2>
+<p>
+  <%= flash[:notice] %>
+</p>
+<p>
+  You're signed in as: <b><%= @current_user.email %></b><br/>
+  <%= link_to 'Sign Out', user_session_path, :method => 'delete' %>
+</p>

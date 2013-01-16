@@ -1,0 +1,19 @@
+<aside id="side_menu">
+	<nav>
+		<ul>
+			<% @sections.each do |section| %>
+				<li><%= link_to section[:title], '#' %></li>
+			<% end %>
+		</ul>
+	</nav>
+</aside>
+<div>
+  <% @sections.each do |section| %>
+    <section>
+			<h1><%= section[:title] %></h1>
+			<p>
+				<%= section[:content] %>
+			</p>
+    </section>
+  <% end %>
+</div>
